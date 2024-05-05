@@ -21,3 +21,4 @@ bin/
 # Unignore all `.exe` in `bin` dir
 !*/bin/*.exe
 *.py
+*.exe
