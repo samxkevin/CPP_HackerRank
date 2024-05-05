@@ -1,0 +1,3 @@
+import CircleAreaAndPerimeter
+CircleAreaAndPerimeter.CircleArea()
+CircleAreaAndPerimeter.CirclePerimeter()
