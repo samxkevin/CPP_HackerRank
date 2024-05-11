@@ -14,9 +14,6 @@ int main(){
             a[i]=-1;
         }
     }
-    int meansealevel=0;
-    int inc=0;
-    int dec=0;
     int sum=0;
     int b[n];
     for(int i=0; i<n; i++){
