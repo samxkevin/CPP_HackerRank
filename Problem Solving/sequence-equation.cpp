@@ -7,20 +7,23 @@ int main(){
     for(int i=0;i<n;i++){
         cin>>a[i];
     }
+    int s=1;
     int b[n];
-    for(int i=0,j=1;i<n,j<=n;i++,j++){
-        if(j==a[i]){
-            for(int k=0;k<n;k++){
-                if(a[k]==i+1){
-                    for(int l=0;l<n;l++){
-                        b[l]=k+1;
-                    }
+    for(int i=0;i<n;i++){
+        b[i]=s;
+        s++;
+    }
+    for(int i=0;i<n;i++){
+        for(int j=0;j<n;j++){
+            if(b[j]==a[i]){
+                int k=i;
+                for(int j=0;j<n;j++){
+                    if(a[j]==k){
+                        cout<<j+1<<endl;
+                    }   
                 }
             }
         }
-    }
-    for(int i=0;i<n;i++){
-        cout<<b[i]<<endl;
     }
     return 0;
 }
